@@ -1,0 +1,14 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/local/lib
+includedir=${prefix}/local/include/ndef
+
+
+Name: Ndef
+Description: Ndef Library
+Version: 1.2.0
+Libs: -L${libdir} -lndef 
+Libs.private: -lQt5Core -lpthread   
+Cflags:  -I${includedir}
+Requires: QtCore
+

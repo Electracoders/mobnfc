@@ -1,0 +1,16 @@
+1) For ip config of WLAN0
+edit /etc/network/interface
+
+add this line:
+
+auto wlan0
+allow-hotplug wlan0
+iface wlan0 inet dhcp
+wpa-ssid "NETGEAR91"
+wpa-psk "abcde12345"
+
+2) For ip setting for ethernet
+Add line in /boot/cmdline.txt
+
+ip=192.168.1.112
+
